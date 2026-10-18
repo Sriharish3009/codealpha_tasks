@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demo Payment - MyStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            MyStore
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="index.html#products">Products</a>
+
+            <a href="index.html#products">Categories</a>
+
+            <a href="cart.html" class="cart-link">
+                🛒 Cart <span id="cart-count">0</span>
+            </a>
+
+            <a href="orders.html">My Orders</a>
+
+            <span id="user-menu">
+                <a href="profile.html">Profile</a>
+            </span>
+        </nav>
+
+    </header>
+
+
+    <main class="payment-container">
+
+        <div class="payment-card">
+
+            <h1>Demo Payment</h1>
+
+            <p class="payment-note">
+                This is a demo payment for testing purposes.
+            </p>
+
+
+            <div class="payment-amount">
+
+                <span>Amount to Pay</span>
+
+                <strong id="payment-total">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <form id="payment-form">
+
+                <div class="form-group">
+
+                    <label for="card-name">
+                        Cardholder Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="card-name"
+                        placeholder="Enter cardholder name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="card-number">
+                        Demo Card Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="card-number"
+                        placeholder="1234 5678 9012 3456"
+                        maxlength="19"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="payment-row">
+
+                    <div class="form-group">
+
+                        <label for="expiry">
+                            Expiry
+                        </label>
+
+                        <input
+                            type="text"
+                            id="expiry"
+                            placeholder="MM/YY"
+                            maxlength="5"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="cvv">
+                            CVV
+                        </label>
+
+                        <input
+                            type="password"
+                            id="cvv"
+                            placeholder="123"
+                            maxlength="3"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="pay-btn"
+                >
+                    Pay Now
+                </button>
+
+            </form>
+
+
+            <p class="demo-warning">
+                Demo only — do not enter real card details.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>MyStore</h2>
+                <p>Your one-stop online shopping destination.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="orders.html">My Orders</a>
+                <a href="profile.html">Profile</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyStore. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="js/payment.js?v=3"></script>
+
+</body>
+
+</html>

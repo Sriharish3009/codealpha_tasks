@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My E-Commerce Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            MyStore
+        </div>
+
+        <nav>
+    <a href="index.html">Home</a>
+    <a href="#products">Products</a>
+    <a href="#products">Categories</a>
+
+    <a href="cart.html" class="cart-link">
+    🛒 Cart <span id="cart-count">0</span>
+</a>
+
+    <span id="user-menu">
+        <a href="login.html">Login</a>
+    </span>
+</nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1>Welcome to MyStore</h1>
+
+            <p>
+                Discover amazing products at great prices.
+            </p>
+
+            <button onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' })">
+    Shop Now
+</button>
+
+        </section>
+
+
+        <section class="products-section" id="products">
+
+            <h2>Our Products</h2>
+
+            <div class="product-controls">
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search products..."
+                >
+
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                </select>
+
+            </div>
+
+            <div id="product-container" class="product-container">
+
+                <!-- Products will appear here using JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2>MyStore</h2>
+            <p>Your one-stop online shopping destination.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="orders.html">My Orders</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 MyStore. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
